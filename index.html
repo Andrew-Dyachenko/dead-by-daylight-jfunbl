@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>DBD - jfunbl</title>
+		<link rel="stylesheet" href="index.scss" />
+	</head>
+	<body>
+		<div class="app">
+			<h1>Just having fun</h1>
+			<svg
+				width="600"
+				height="400"
+				viewBox="0 0 600 400"
+				xmlns="http://www.w3.org/2000/svg"
+				style="border-style: outset; border-width: 4px;"
+			>
+				<defs>
+					<!-- Gradient for Surv №1 -->
+					<lineargradient id="survGradient_1" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" stop-color="lightgreen">
+							<!-- Reset offset value -->
+							<set attributeName="offset" to="0%" begin="killerRollbackGradientAnimation.end" />
+							<!-- Gradient animation for Surv №1 -->
+							<animate
+								id="survGradientAnimation_1"
+								attributename="offset"
+								values="0;1"
+								dur="1s"
+								begin="0s; killerRollbackGradientAnimation.end"
+								fill="freeze"
+							/>
+							<!-- Reset stop-color value -->
+							<set
+								attributeName="stop-color"
+								to="lightgreen"
+								begin="killerRollbackGradientAnimation.end"
+							/>
+							<!-- Rollback animation -->
+							<animate
+								id="survRollbackGradientAnimation_1"
+								attributeName="stop-color"
+								values="lightgreen;blue"
+								dur="1s"
+								begin="killerGradientAnimation.end"
+								fill="freeze"
+							/>
+						</stop>
+						<stop offset="0%" stop-color="blue">
+							<!-- Reset offset value -->
+							<set attributeName="offset" to="0%" begin="killerRollbackGradientAnimation.end" />
+							<!-- Gradient animation for Surv №1.1 -->
+							<animate
+								id="survGradientAnimation_1_1"
+								attributename="offset"
+								values="0;1"
+								dur="1s"
+								begin="0s; killerRollbackGradientAnimation.end"
+								fill="freeze"
+							/>
+						</stop>
+					</lineargradient>
+
+					<!-- Gradient for Surv №2 -->
+					<lineargradient id="survGradient_2" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" stop-color="lightgreen">
+							<!-- Reset offset value -->
+							<set attributeName="offset" to="0%" begin="killerRollbackGradientAnimation.end" />
+							<!-- Gradient animation for Surv №2 -->
+							<animate
+								id="survGradientAnimation_2"
+								attributename="offset"
+								values="0;1"
+								dur="1s"
+								begin="survGradientAnimation_1.end"
+								fill="freeze"
+							/>
+							<!-- Reset stop-color value -->
+							<set
+								attributeName="stop-color"
+								to="lightgreen"
+								begin="killerRollbackGradientAnimation.end"
+							/>
+							<!-- Rollback animation -->
+							<animate
+								id="survRollbackGradientAnimation_2"
+								attributeName="stop-color"
+								values="lightgreen;blue"
+								dur="1s"
+								begin="killerGradientAnimation.end"
+								fill="freeze"
+							/>
+						</stop>
+						<stop offset="0%" stop-color="blue">
+							<!-- Reset offset value -->
+							<set attributeName="offset" to="0%" begin="killerRollbackGradientAnimation.end" />
+							<!-- Gradient animation for Surv №2.1 -->
+							<animate
+								id="survGradientAnimation_2_1"
+								attributename="offset"
+								values="0;1"
+								dur="1s"
+								begin="survGradientAnimation_1.end"
+								fill="freeze"
+							/>
+						</stop>
+					</lineargradient>
+
+					<!-- Gradient for Surv №3 -->
+					<lineargradient id="survGradient_3" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" stop-color="lightgreen">
+							<!-- Reset offset value -->
+							<set attributeName="offset" to="0%" begin="killerRollbackGradientAnimation.end" />
+							<!-- Gradient animation for Surv №3 -->
+							<animate
+								id="survGradientAnimation_3"
+								attributename="offset"
+								values="0;1"
+								dur="1s"
+								begin="survGradientAnimation_2.end"
+								fill="freeze"
+							/>
+							<!-- Reset stop-color value -->
+							<set
+								attributeName="stop-color"
+								to="lightgreen"
+								begin="killerRollbackGradientAnimation.end"
+							/>
+							<!-- Rollback animation -->
+							<animate
+								id="survRollbackGradientAnimation_3"
+								attributeName="stop-color"
+								values="lightgreen;blue"
+								dur="1s"
+								begin="killerGradientAnimation.end"
+								fill="freeze"
+							/>
+						</stop>
+						<stop offset="0%" stop-color="blue">
+							<!-- Reset offset value -->
+							<set attributeName="offset" to="0%" begin="killerRollbackGradientAnimation.end" />
+							<!-- Gradient animation for Surv №3.1 -->
+							<animate
+								id="survGradientAnimation_3_1"
+								attributename="offset"
+								values="0;1"
+								dur="1s"
+								begin="survGradientAnimation_2.end"
+								fill="freeze"
+							/>
+						</stop>
+					</lineargradient>
+
+					<!-- Gradient for Surv №4 -->
+					<lineargradient id="survGradient_4" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" stop-color="lightgreen">
+							<!-- Reset offset value -->
+							<set attributeName="offset" to="0%" begin="killerRollbackGradientAnimation.end" />
+							<!-- Gradient animation for Surv №4 -->
+							<animate
+								id="survGradientAnimation_4"
+								attributename="offset"
+								values="0;1"
+								dur="1s"
+								begin="survGradientAnimation_3.end"
+								fill="freeze"
+							/>
+							<!-- Reset stop-color value -->
+							<set
+								attributeName="stop-color"
+								to="lightgreen"
+								begin="killerRollbackGradientAnimation.end"
+							/>
+							<!-- Rollback animation -->
+							<animate
+								id="survRollbackGradientAnimation_4"
+								attributeName="stop-color"
+								values="lightgreen;blue"
+								dur="1s"
+								begin="killerGradientAnimation.end"
+								fill="freeze"
+							/>
+						</stop>
+						<stop offset="0%" stop-color="blue">
+							<!-- Reset offset value -->
+							<set attributeName="offset" to="0%" begin="killerRollbackGradientAnimation.end" />
+							<!-- Gradient animation for Surv №4.1 -->
+							<animate
+								id="survGradientAnimation_4_1"
+								attributename="offset"
+								values="0;1"
+								dur="1s"
+								begin="survGradientAnimation_3.end"
+								fill="freeze"
+							/>
+						</stop>
+					</lineargradient>
+
+					<!-- Gradient for Killer -->
+					<lineargradient id="killerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+						<stop offset="0%" stop-color="lightgreen">
+							<!-- Reset offset value -->
+							<set attributeName="offset" to="0%" begin="killerRollbackGradientAnimation.end" />
+							<!-- Gradient animation for Killer №1 -->
+							<animate
+								id="killerGradientAnimation"
+								attributename="offset"
+								values="0;1"
+								dur="1s"
+								begin="survGradientAnimation_4.end"
+								fill="freeze"
+							/>
+							<!-- Reset stop-color value -->
+							<set
+								attributeName="stop-color"
+								to="lightgreen"
+								begin="killerRollbackGradientAnimation.end"
+							/>
+							<!-- Rollback animation for Killer -->
+							<animate
+								id="killerRollbackGradientAnimation"
+								attributeName="stop-color"
+								values="lightgreen;blue"
+								dur="1s"
+								begin="killerGradientAnimation.end"
+								fill="freeze"
+							/>
+						</stop>
+						<stop offset="0%" stop-color="blue">
+							<!-- Reset offset value -->
+							<set attributeName="offset" to="0%" begin="killerRollbackGradientAnimation.end" />
+							<!-- Gradient animation for Killer №1.1 -->
+							<animate
+								id="killerGradientAnimation_1"
+								attributename="offset"
+								values="0;1"
+								dur="1s"
+								begin="survGradientAnimation_4.end"
+								fill="freeze"
+							/>
+						</stop>
+					</lineargradient>
+				</defs>
+				<symbol id="surv_1">
+					<rect width="40" height="400" rx="20" />
+				</symbol>
+				<symbol id="surv_2">
+					<rect width="40" height="400" rx="20" />
+				</symbol>
+				<symbol id="surv_3">
+					<rect width="40" height="400" rx="20" />
+				</symbol>
+				<symbol id="surv_4">
+					<rect width="40" height="400" rx="20" />
+				</symbol>
+				<symbol id="killer" viewBox="0 0 600 40">
+					<rect width="600" height="40" rx="20" />
+				</symbol>
+				<use
+					href="#killer"
+					x="-4.34"
+					y="0"
+					width="608.68"
+					transform="rotate(10) scale(1)"
+					transform-origin="center center"
+					fill="url(#killerGradient)"
+				/>
+				<use href="#surv_1" x="124" y="0" fill="url(#survGradient_1)" />
+				<use href="#surv_2" x="228" y="0" fill="url(#survGradient_2)" />
+				<use href="#surv_3" x="332" y="0" fill="url(#survGradient_3)" />
+				<use href="#surv_4" x="436" y="0" fill="url(#survGradient_4)" />
+			</svg>
+		</div>
+	</body>
+</html>
