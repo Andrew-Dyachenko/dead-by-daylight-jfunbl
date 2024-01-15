@@ -1,5 +1,6 @@
 {
 	"devDependencies": {
+		"@biomejs/biome": "1.5.2",
 		"@parcel/transformer-pug": "^2.11.0",
 		"@parcel/transformer-sass": "^2.11.0",
 		"parcel": "2.11.0"
