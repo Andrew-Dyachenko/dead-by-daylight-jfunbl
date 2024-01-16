@@ -49,66 +49,6 @@ body {
 	text-decoration-thickness: 0.0625em;
 }
 
-// animation-play-state: paused;
-
-// .feDropShadow {
-// 	&--surv,
-// 	&--killer {
-// 		flood-color: rgba(255, 255, 255, 0.118033989);
-
-// 		@media (prefers-color-scheme: dark) {
-// 			flood-color: rgba(255, 255, 255, 0.118033989);
-// 		}
-
-// 		@media (prefers-color-scheme: light) {
-// 			flood-color: rgba(0, 0, 0, 0.118033989);
-// 		}
-// 	}
-// }
-
-// .survGradientStop,
-// .killerGradientStop {
-// 	&--top {
-// 		stop-color: #fff;
-// 	}
-// 	&--bottom {
-// 		stop-color: #4b4b4b
-// 	}
-
-// 	@media (prefers-color-scheme: dark) {
-// 		&--top {
-// 			stop-color: #fff;
-// 		}
-// 		&--bottom {
-// 			stop-color: #4b4b4b
-// 		}
-// 	}
-
-// 	@media (prefers-color-scheme: light) {
-// 		&--top {
-// 			stop-color: #000;
-// 		}
-// 		&--bottom {
-// 			stop-color: #b4b4b4;
-// 		}
-// 	}
-// }
-
-// .resetStopColor {
-// 	&--surv,
-// 	&--killer {
-// 		to: #fff;
-
-// 		@media (prefers-color-scheme: dark) {
-// 			to: #fff;
-// 		}
-
-// 		@media (prefers-color-scheme: light) {
-// 			to: #000;
-// 		}
-// 	}
-// }
-
 .app {
 	display: flex;
 	flex-direction: column;
@@ -117,9 +57,6 @@ body {
 	min-height: 100svh;
 	padding: 1rem;
 	row-gap: 2rem;
-	// background-image: url(dbd-animation-logo.gif);
-	// background-repeat: no-repeat;
-	// background-position: center top;
 
 	&__title {
 		text-align: center;
@@ -135,6 +72,10 @@ body {
 		width: 100%;
 		height: auto;
 		max-width: 600px;
+
+		@media (prefers-reduced-motion: reduce) {
+			animation-play-state: paused;
+		}
 
 		@media (prefers-color-scheme: dark) {
 			&--light {
