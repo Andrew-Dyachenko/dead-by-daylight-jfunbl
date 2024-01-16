@@ -6,6 +6,7 @@
 		"parcel": "2.11.0"
 	},
 	"scripts": {
-		"start": "parcel index.html"
+		"start": "parcel index.html",
+		"build": "parcel build index.html --dist-dir build/ --public-url ./ --no-scope-hoist --no-optimize"
 	}
 }
