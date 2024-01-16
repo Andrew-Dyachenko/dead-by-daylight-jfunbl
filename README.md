@@ -1,1 +1,0 @@
-# dead-by-daylight-jfunbl
