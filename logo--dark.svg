@@ -1,9 +1,9 @@
 <!-- Dark Logo -->
-<svg class="app__logo app__logo--dark" width="600" height="458.17159" viewBox="0 0 600 458.17159"
+<svg class="app__logo app__logo--dark" width="600" height="465.35" viewBox="0 0 632 490.17159"
 	xmlns="http://www.w3.org/2000/svg">
 	<defs>
 		<!-- Surv 1 shadow define -->
-		<filter id="survShadow_1">
+		<filter id="survShadow_1" width="200%" height="200%" x="-50%" y="-50%">
 			<feDropShadow dx="0" dy="0" stdDeviation="8" flood-opacity="0" flood-color="rgba(255,255,255,0.118033989)">
 				<!-- Reset surv 2 shadow -->
 				<set attributeName="flood-opacity" to="0" begin="killerRollbackGradientAnimation.end"></set>
@@ -18,7 +18,7 @@
 		</filter>
 
 		<!-- Surv 2 shadow define -->
-		<filter id="survShadow_2">
+		<filter id="survShadow_2" width="200%" height="200%" x="-50%" y="-50%">
 			<feDropShadow dx="0" dy="0" stdDeviation="8" flood-opacity="0" flood-color="rgba(255,255,255,0.118033989)">
 				<!-- Reset surv 2 shadow -->
 				<set attributeName="flood-opacity" to="0" begin="killerRollbackGradientAnimation.end"></set>
@@ -32,7 +32,7 @@
 		</filter>
 
 		<!-- Surv 3 shadow define -->
-		<filter id="survShadow_3">
+		<filter id="survShadow_3" width="200%" height="200%" x="-50%" y="-50%">
 			<feDropShadow dx="0" dy="0" stdDeviation="8" flood-opacity="0" flood-color="rgba(255,255,255,0.118033989)">
 				<!-- Reset surv 3 shadow -->
 				<set attributeName="flood-opacity" to="0" begin="killerRollbackGradientAnimation.end"></set>
@@ -46,7 +46,7 @@
 		</filter>
 
 		<!-- Surv 4 shadow define -->
-		<filter id="survShadow_4">
+		<filter id="survShadow_4" width="200%" height="200%" x="-50%" y="-50%">
 			<feDropShadow dx="0" dy="0" stdDeviation="8" flood-opacity="0" flood-color="rgba(255,255,255,0.118033989)">
 				<!-- Reset surv 4 shadow -->
 				<set attributeName="flood-opacity" to="0" begin="killerRollbackGradientAnimation.end"></set>
@@ -60,7 +60,7 @@
 		</filter>
 
 		<!-- Killer shadow define -->
-		<filter id="killerShadow">
+		<filter id="killerShadow" width="200%" height="200%" x="-50%" y="-50%">
 			<feDropShadow dx="0" dy="0" stdDeviation="8" flood-opacity="0" flood-color="rgba(255,255,255,0.118033989)">
 				<!-- Reset killer shadow -->
 				<set attributeName="flood-opacity" to="0" begin="killerRollbackGradientAnimation.end"></set>
@@ -246,69 +246,69 @@
 
 		<!-- Clip Path "surv 1" -->
 		<clipPath id="clipPathSurv_1">
-			<use href="#surv_1_1" x="120.565" y="39.107"></use>
-			<use href="#surv_1_2" x="120.565" y="39.107"></use>
-			<use href="#surv_1_3" x="120.565" y="39.107"></use>
-			<use href="#surv_1_4" x="120.565" y="39.107"></use>
+			<use href="#surv_1_1" x="136.565" y="55.107"></use>
+			<use href="#surv_1_2" x="136.565" y="55.107"></use>
+			<use href="#surv_1_3" x="136.565" y="55.107"></use>
+			<use href="#surv_1_4" x="136.565" y="55.107"></use>
 		</clipPath>
 
 		<!-- Clip Path "surv 2" -->
 		<clipPath id="clipPathSurv_2">
-			<use href="#surv_2_1" x="217.901" y="0.001"></use>
-			<use href="#surv_2_2" x="217.901" y="0.001"></use>
+			<use href="#surv_2_1" x="233.901" y="16.001"></use>
+			<use href="#surv_2_2" x="233.901" y="16.001"></use>
 		</clipPath>
 
 		<!-- Clip Path "surv 3" -->
 		<clipPath id="clipPathSurv_3">
-			<use href="#surv_3_1" x="317.146" y="11.471"></use>
-			<use href="#surv_3_2" x="317.146" y="11.471"></use>
+			<use href="#surv_3_1" x="333.146" y="27.471"></use>
+			<use href="#surv_3_2" x="333.146" y="27.471"></use>
 		</clipPath>
 
 		<!-- Clip Path "surv 4" -->
 		<clipPath id="clipPathSurv_4">
-			<use href="#surv_4_1" x="407.38" y="63.787"></use>
-			<use href="#surv_4_2" x="407.38" y="63.787"></use>
-			<use href="#surv_4_3" x="407.38" y="63.787"></use>
+			<use href="#surv_4_1" x="423.38" y="79.787"></use>
+			<use href="#surv_4_2" x="423.38" y="79.787"></use>
+			<use href="#surv_4_3" x="423.38" y="79.787"></use>
 		</clipPath>
 
 		<!-- Clip Path "killer" -->
 		<clipPath id="clipPathSurvKiller">
-			<use href="#killer_1_1" x="0.001" y="139.691"></use>
+			<use href="#killer_1_1" x="16.001" y="155.691"></use>
 		</clipPath>
 	</defs>
 
 	<!-- Surv 1 shadow -->
-	<use href="#surv_1" x="120.565" y="39.107" fill="#4b4b4b" filter="url(#survShadow_1)"></use>
+	<use href="#surv_1" x="136.565" y="55.107" fill="#4b4b4b" filter="url(#survShadow_1)"></use>
 
 	<!-- Surv 2 shadow -->
-	<use href="#surv_2" x="217.901" y="0.001" fill="#4b4b4b" filter="url(#survShadow_2)"></use>
+	<use href="#surv_2" x="233.901" y="16.001" fill="#4b4b4b" filter="url(#survShadow_2)"></use>
 
 	<!-- Surv 3 shadow -->
-	<use href="#surv_3" x="317.146" y="11.471" fill="#4b4b4b" filter="url(#survShadow_3)"></use>
+	<use href="#surv_3" x="333.146" y="27.471" fill="#4b4b4b" filter="url(#survShadow_3)"></use>
 
 	<!-- Surv 4 shadow -->
-	<use href="#surv_4" x="407.38" y="63.787" fill="#4b4b4b" filter="url(#survShadow_4)"></use>
+	<use href="#surv_4" x="423.38" y="79.787" fill="#4b4b4b" filter="url(#survShadow_4)"></use>
 
 	<!-- Killer 1 shadow -->
-	<use href="#killer_1" x="0.001" y="139.691" fill="#4b4b4b" filter="url(#killerShadow)"></use>
+	<use href="#killer_1" x="16.001" y="155.691" fill="#4b4b4b" filter="url(#killerShadow)"></use>
 
 	<!-- Rect killer -->
-	<rect clip-path="url(#clipPathSurvKiller)" width="600.00055" height="179.24908" x="0.001" y="139.691"
+	<rect clip-path="url(#clipPathSurvKiller)" width="600.00055" height="179.24908" x="16.001" y="155.691"
 		fill="url(#killerGradient)"></rect>
 
 	<!-- Rect surv 1 -->
-	<rect clip-path="url(#clipPathSurv_1)" width="60.138611" height="408.46396" x="120.565" y="39.107"
+	<rect clip-path="url(#clipPathSurv_1)" width="60.138611" height="408.46396" x="136.565" y="55.107"
 		fill="url(#survGradient_1)"></rect>
 
 	<!-- Rect surv 2 -->
-	<rect clip-path="url(#clipPathSurv_2)" width="61.353142" height="458.17199" x="217.901" y="0.001"
+	<rect clip-path="url(#clipPathSurv_2)" width="61.353142" height="458.17199" x="233.901" y="16.001"
 		fill="url(#survGradient_2)"></rect>
 
 	<!-- Rect surv 3 -->
-	<rect clip-path="url(#clipPathSurv_3)" width="53.188869" height="405.85631" x="317.146" y="11.471"
+	<rect clip-path="url(#clipPathSurv_3)" width="53.188869" height="405.85631" x="333.146" y="27.471"
 		fill="url(#survGradient_3)"></rect>
 
 	<!-- Rect surv 4 -->
-	<rect clip-path="url(#clipPathSurv_4)" width="51.450439" height="367.27343" x="407.38" y="63.787"
+	<rect clip-path="url(#clipPathSurv_4)" width="51.450439" height="367.27343" x="423.38" y="79.787"
 		fill="url(#survGradient_4)"></rect>
 </svg>
