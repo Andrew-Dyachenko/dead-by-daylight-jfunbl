@@ -75,6 +75,12 @@ body {
   height: auto;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .app__logo {
+    animation-play-state: paused;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   .app__logo--light {
     display: none;
@@ -105,4 +111,4 @@ body {
   display: inline-flex;
 }
 
-/*# sourceMappingURL=index.cd3596ab.css.map */
+/*# sourceMappingURL=index.14ec4dc7.css.map */
